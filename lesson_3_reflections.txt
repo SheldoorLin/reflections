@@ -4,7 +4,8 @@ when would you want to creat a remote repository than rather than keeping all yo
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+    =>其實跟之前在本機端使用git自動存取的想法差不多，如果是定時或隔幾行就自動存，這樣存儲的版本意義就不大，變成只是可以回朔的大量儲存而已
+      所以手動控制，在自己認為適當的時機commit才是相對比較好的選擇。
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
