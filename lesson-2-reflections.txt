@@ -1,0 +1,33 @@
+ Q: What happens when you initialize a repository? 
+   A:建立文件之後  需要用 git status去察看目前狀況
+ Q: Why do you need to do it?
+
+
+   A:必須確定狀態已改變
+ Q: How is the staging area different from the working directory and the repository?
+
+   A:staging area為暫存區(編輯完後會消失)，working directory為工作目錄(可以查看但是與編輯無關)，the repository為版本庫(編輯歷史存儲的地方)
+
+
+
+ Q: What value do you think it offers?
+
+
+ Q: How can you use the staging area to make sure you have one commit per logical
+change?
+
+
+ Q: What are some situations when branches would be helpful in keeping your history
+organized? 
+ Q: How would branches help?
+
+How do the diagrams help you visualize the branch structure?
+
+
+ Q: What is the result of merging two branches together?
+ Q: Why do we represent it in
+the diagram the way we do?
+
+
+ Q: What are the pros and cons of Git's automatic merging vs. always doing merges
+manually?
