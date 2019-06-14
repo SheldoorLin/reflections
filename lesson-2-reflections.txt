@@ -7,27 +7,42 @@
  Q: How is the staging area different from the working directory and the repository?
 
    A:staging area為暫存區(編輯完後會消失)，working directory為工作目錄(可以查看但是與編輯無關)，the repository為版本庫(編輯歷史存儲的地方)
-
-
-
  Q: What value do you think it offers?
+    A:
+
 
 
  Q: How can you use the staging area to make sure you have one commit per logical
 change?
-
+   A:先用 git diff 確定工作區與暫存區有無差別，再用 git diff --staged確定是否與目前已存之最近commit一致，再使用git reset--hard把暫存區的檔案洗掉
 
  Q: What are some situations when branches would be helpful in keeping your history
 organized? 
+   A:完全可以滿足需求，在需要作出分支的地方加入分枝，可以達到存儲不一樣版本的目的
+     先使用git branch 確定目前所在分枝，然後使用git branch "所需要的分支名稱" 來加入分支，再用git branch確定分支已創立，
+     再更改目標文件，更改完後用git diff確認目前更動狀況，是否有儲存到，之後再使用git add "更改檔案之名稱" ，再使用git diff確定已儲存，最後使用git status確定暫存區已經沒有東西
+
+
+  ##要觀察整個git log 分支狀況  可以使用git log --graph --oneline +想知道的分支
+                                        例如git log --graph --oneline master coins ; git log --graph --oneline master coins easymode 
+
+
  Q: How would branches help?
 
 How do the diagrams help you visualize the branch structure?
 
 
+   A:
+
  Q: What is the result of merging two branches together?
+   A:
+
  Q: Why do we represent it in
 the diagram the way we do?
 
 
+   A:
+
  Q: What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+   A:
