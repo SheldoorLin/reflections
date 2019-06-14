@@ -1,0 +1,2 @@
+when would you want to creat a remote repository than rather than keeping all you work local?
+    =>因為存在網路上，這樣我就可以很簡單的使用不同的平台協作或是跟他人合作，而且因為有線上備份，對於資料安全多了一分保障
