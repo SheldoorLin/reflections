@@ -18,14 +18,18 @@ use one instead of another?
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    =>在遠程檔案可能很多人都在編輯並存儲相對應commit的狀況下，擁有本地端資料(上次已知狀態的副本)可以清楚的知道之前對方變動多少東西，在合併的時候需要如何調整，如果有衝突，
-      則在解決衝突之後，將檔案再度上傳即可將資料狀況即時更新。
-      而如果對方的副本可以追朔到我目前的狀況，我要做的只有使用git pull origin "branch名稱" 就可以簡單的把最新的commit狀態merge進我自己電腦的本機端
+    =>在遠程檔案可能很多人都在編輯並存儲相對應commit的狀況下，擁有本地端資料(上次已知狀態的副本)可以清楚的知道之前對方變動多少東西，
+      在合併的時候需要如何調整，如果有衝突，則在解決衝突之後，將檔案再度上傳即可將資料狀況即時更新。
+
+      而如果對方的副本可以追朔到我目前的狀況，我要做的只有使用git pull origin "branch名稱" 就可以簡單的把最新的commit狀態merge進
+      我自己電腦的本機端
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    =>在不使用git工具做更改的狀況下，我們必須自己建一個目錄，或是在每次做一個更改之後就另存一個檔案，然後使得文件佔據非常多的硬碟容量
+      ，並且在多人協做的狀況下，很難合併大家的差異使得協作上更加的困難
+      以目前學習到現在的角度，git的確是一個很好用的工具。
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
