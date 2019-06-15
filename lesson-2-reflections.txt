@@ -32,17 +32,22 @@ organized?
 How do the diagrams help you visualize the branch structure?
 
 
-   A:
+   A:分支功能能夠幫助我們更清楚的分辨目前每個版本的現狀，使用git log --graph --oneline，可以清楚看到整個支線狀況
 
  Q: What is the result of merging two branches together?
-   A:
+   A:有兩種情形
+     第一種是把兩個同源但是發展出不同功能的程式做merge，使用git merge branch1 branch2 就可以達到效果(其實如果在master 下直接打git merge "要合併的branch"比較常用，前面那樣打只是為了可以更清楚合併的是從哪個merge進哪一個而已)
+     第二種就是把兩個同源，但是在相同的程式碼中有不同條件的merge會產生衝突，在衝突發生的同時，git會告訴我們衝突發生，然後需要我們直接去判斷哪些條件或寫法是我想要留下來的，將衝突解決之後，使用git status會發現衝突檔案並沒有完成commit，需要我們使用git add "檔案名稱" 將檔案加入commit目錄，然後再使用git commit去把整個commit包起來           
 
  Q: Why do we represent it in
 the diagram the way we do?
 
 
-   A:
+   A:這樣做可以幫助我們更了解它們彼此的作用與關係，使得使用上可以減少錯誤發生。
 
  Q: What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
-   A:
+   
+   A:自動合併雖然好用，但是也只局限於兩個不同的檔案彼此從同源檔案更改的地方都只是單純互不影響的狀況。
+     手動合併(merge)在自動merge衝突發生的時候，必須好好檢查彼此之間是否有大問題。
+     
