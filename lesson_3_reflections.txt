@@ -18,7 +18,9 @@ use one instead of another?
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    =>在遠程檔案可能很多人都在編輯並存儲相對應commit的狀況下，擁有本地端資料(上次已知狀態的副本)可以清楚的知道之前對方變動多少東西，在合併的時候需要如何調整，如果有衝突，
+      則在解決衝突之後，將檔案再度上傳即可將資料狀況即時更新。
+      而如果對方的副本可以追朔到我目前的狀況，我要做的只有使用git pull origin "branch名稱" 就可以簡單的把最新的commit狀態merge進我自己電腦的本機端
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
