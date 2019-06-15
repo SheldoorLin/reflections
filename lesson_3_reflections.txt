@@ -34,4 +34,5 @@ and what would be harder?
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    =>在共同協作的狀況下，如果直接在master做更改，會使得master更動頻繁，使得大家的工作更加不流暢，在工作時要處理衝突的地方更多，所以使用新branch是比較好的選項
+      而如果今天協做狀況是某個主要編寫員，需要多次更改master以便大家可以使用最新的master版本做比較，這樣直接更改master比較快速。
